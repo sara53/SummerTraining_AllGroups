@@ -1,0 +1,11 @@
+1- install NodeJs
+2- node -v
+3- npm i -g typescript
+4- tsc filename.ts -w
+------------------------------------------
+== npm i -g @angular/cli
+== ng v
+== ng new projectName
+== ng serve -g -- npm start
+---------------------------------------
+== ng g c componentName

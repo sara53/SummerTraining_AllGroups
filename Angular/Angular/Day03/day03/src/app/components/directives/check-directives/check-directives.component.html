@@ -1,0 +1,64 @@
+<div class="bg-dark text-light text-center p-5">
+  <h1 class="text-warning">Login Section</h1>
+  <div class="container">
+    <!-- <p *ngIf="flag; else myDiv" class="bg-light text-dark p-3 rounded mt-4">
+      Login Page
+    </p>
+    <button (click)="toggle()" class="btn btn-danger">Toggle</button>
+
+    <ng-template #myDiv>
+      <p class="bg-success text-light p-3 rounded mt-4">Register Page</p>
+      <button class="btn btn-warning">Back</button>
+    </ng-template> -->
+
+    <!-- <div class="row">
+      <div
+        *ngFor="
+          let x of itiTracks;
+          let i = index;
+          let odd = odd;
+          let even = even
+        "
+        class="bg-light text-dark p-3 g-2 mx-1 rounded col-sm-4"
+      >
+        <h1>{{ i }} : {{ x }} : {{ even }}</h1>
+        <p>
+          {{ odd ? "Welcome From ITI" : "" }}
+        </p>
+        <p>
+          {{ even ? "Hello" : "" }}
+        </p>
+      </div>
+    </div> -->
+
+    <!-- <div [ngSwitch]="color">
+      <p *ngSwitchCase="'green'" class="bg-success p-3 rounded">
+        Lorem ipsum dolor sit amet consectetur
+      </p>
+      <p *ngSwitchCase="'yellow'" class="bg-warning p-3 rounded">
+        Lorem ipsum dolor sit amet consectetur
+      </p>
+      <p *ngSwitchCase="'blue'" class="bg-primary p-3 rounded">
+        Lorem ipsum dolor sit amet consectetur
+      </p>
+      <p *ngSwitchDefault class="bg-light text-dark p-3 rounded">
+        Lorem ipsum dolor sit amet consectetur
+      </p>
+    </div> -->
+    @for (x of itiTracks; track $index;) {
+    <div class="bg-light m-2 text-dark p-3 g-2 mx-1 rounded">
+      <h1>Welcome</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, facere.
+      </p>
+    </div>
+    }@empty {
+    <div class="bg-secondary text-light p-5">
+      <p>No Track To show</p>
+    </div>
+    } @if (flag) {
+    <p>welcome</p>
+
+    }
+  </div>
+</div>

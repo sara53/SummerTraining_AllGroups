@@ -1,0 +1,31 @@
+<div class="bg-dark p-5 text-light text-center">
+  <div class="container">
+    <!-- <h1 class="" [style.color]="flag ? 'red' : 'green'">Login Page</h1> -->
+    <!-- <h1
+      class=""
+      [ngStyle]="{
+        color: flag ? 'red' : 'green',
+        backgroundColor: flag ? '#fff' : '#000',
+        padding: '10px'
+      }"
+    >
+      Login Page
+    </h1> -->
+    <!-- <h1 [class.customClass]="flag">Login Page</h1> -->
+    <h1
+      [ngClass]="{
+        'bg-success p-2': flag,
+        'bg-danger': !flag
+      }"
+    >
+      Login Page
+    </h1>
+    <p class="bg-light p-3 rounded m-3 text-dark">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad aut optio
+      numquam, earum facilis aliquid. Itaque error, ipsum recusandae delectus
+      eos quasi alias, fugit cupiditate optio laudantium ipsa exercitationem.
+      Numquam.
+    </p>
+    <button class="btn btn-danger" (click)="toggle()">Toggle</button>
+  </div>
+</div>

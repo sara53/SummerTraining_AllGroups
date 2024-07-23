@@ -1,0 +1,27 @@
+<div class="bg-dark text-light p-5 text-center">
+  <h1 class="text-warning">Two Way Binding</h1>
+  <div class="container">
+    <!-- <input
+      type="text"
+      class="form-control mt-4"
+      placeholder="Enter Your Data"
+      (input)="getInputData($event)"
+    /> -->
+    <input
+      type="text"
+      class="form-control mt-4"
+      placeholder="Enter Your Data"
+      [(ngModel)]="inputValue"
+      name="username"
+    />
+    <p class="lead fs-1">{{ inputValue }}</p>
+    <select name="courses" class="form-select" [(ngModel)]="selectValue">
+      <option>Html</option>
+      <option>Css</option>
+      <option>Js</option>
+      <option>Angular</option>
+    </select>
+
+    <p class="mt-4 text-warning">Your track is :{{ selectValue }}</p>
+  </div>
+</div>

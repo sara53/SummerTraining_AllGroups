@@ -1,0 +1,15 @@
+-- Component communication  
+    -- one way Binding  
+    -- two way Binding 
+        (Normal Way)
+        (formsModule)
+    -- event Binding
+
+-- Directives
+    -- Structural Directives    
+        *ngIf *ngSwitch *ngFor
+        [controlFlow]
+    
+    -- Attribute Directives
+  [class.className] [ngClass][style.propName][ngStyle]
+    

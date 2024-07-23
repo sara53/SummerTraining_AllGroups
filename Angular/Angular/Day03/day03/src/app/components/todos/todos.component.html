@@ -1,0 +1,32 @@
+<div class="bg-dark p-5 text-light text-center">
+  <h1 class="text-warning">Todos List</h1>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-8">
+        <input
+          type="text"
+          name="courseName"
+          class="form-control"
+          [(ngModel)]="inputValue"
+          placeholder="Enter Course Name"
+        />
+      </div>
+      <div class="col-sm-4">
+        <button (click)="addTodos()" class="btn btn-success">Add</button>
+      </div>
+    </div>
+    @for (todo of todosList; track $index) {
+    <div class="row mt-4">
+      <div class="col-sm-8">
+        <p class="bg-secondary p-2 rounded">{{ todo }}</p>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-danger" (click)="removeTodos($index)">
+          remove
+        </button>
+      </div>
+    </div>
+
+    }
+  </div>
+</div>
