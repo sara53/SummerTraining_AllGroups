@@ -1,0 +1,15 @@
+<div class="bg-dark p-5 text-light">
+  <div class="container">
+    <h1 class="text-center text-warning">Our Products</h1>
+    <div class="row mt-5">
+      @for (product of products; track $index) {
+
+      <app-product-details
+        [myProduct]="product"
+        class="col-sm-6 col-md-3"
+      ></app-product-details>
+
+      }
+    </div>
+  </div>
+</div>

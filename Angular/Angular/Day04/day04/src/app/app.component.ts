@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { LoginComponent } from './components/login/login.component';
+import { ContentComponent } from './components/content/content.component';
+import { ProductsComponent } from './components/products/products.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [LoginComponent, ContentComponent, ProductsComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
+})
+export class AppComponent {
+  dataFromChild: string = 'Welcome';
+  title = 'day04';
+
+  trackName: string = 'Angular';
+
+  getData(e: string) {
+    this.dataFromChild = e;
+  }
+}
