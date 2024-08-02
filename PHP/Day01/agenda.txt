@@ -1,0 +1,22 @@
+== Tags
+    -- Opening closing Tags <p>Content Here...</p>
+    -- self closing Tags    <img /> 
+
+== Html --> RootElement
+
+== attributes 
+        -- global attributes (id -- class)    
+        -- private attributes
+ == vs Code 
+    -- https://code.visualstudio.com/download
+
+== Dashboard
+    -- https://miro.com/app/board/uXjVKyCUBcg=/
+
+    
+== elements 
+    -- block elements
+        -- full width 
+        -- new Line
+    -- inline elements
+        -- content 
