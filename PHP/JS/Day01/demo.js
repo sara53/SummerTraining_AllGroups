@@ -188,15 +188,13 @@
  *------------------------------------------------
  * == take n number until --> zero or sum > 100
  * == show the sum of integers in your document
- *
- * 10
- * 20
- * 10
- * 20
- * 50
+ * ==
+ * ==
  * ---------------------------------------------------------
- * == take a string from the user then count e char in this string
+ * == take a string from the user then count [e] char in this string
  * == ahmed --> 1
  * == mona --> 0
  * == IEMfe --> 2
  * --------------------------- */
+// var i = 1;
+// document.writeln("<h" + i + ">Welcome</h" + i + ">");
