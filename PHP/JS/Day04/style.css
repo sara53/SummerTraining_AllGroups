@@ -1,0 +1,71 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	margin: 20px;
+}
+
+div {
+	background-color: #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+p {
+	background-color: #aaa;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+button {
+	display: block;
+	width: 150px;
+	padding: 15px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 20px;
+}
+
+.content {
+	background-color: #5ea563;
+}
+
+.myP {
+	font-size: 25px;
+}
+
+.jsClass {
+	background-color: rgb(9, 105, 75);
+	color: #fff;
+}
+input[type="text"] {
+	display: block;
+	width: 180px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 40px;
+	border-radius: 3px;
+	outline: 0;
+}
+a {
+	display: block;
+
+	margin: 20px;
+}
+
+#output {
+	color: red;
+	display: block;
+	margin-left: 30px;
+	font-size: 30px;
+	display: none;
+}
+#result {
+	display: block;
+	margin-left: 40px;
+	font-size: 18px;
+}
