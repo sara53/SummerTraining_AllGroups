@@ -1,11 +1,19 @@
 <div class="bg-light p-5 text-center">
   <div class="contaier">
     <h1>Our Products</h1>
-    <div class="row">
-      <app-product-item class="col-sm-6 col-md-3"></app-product-item>
-      <app-product-item class="col-sm-6 col-md-3"></app-product-item>
-      <app-product-item class="col-sm-6 col-md-3"></app-product-item>
-      <app-product-item class="col-sm-6 col-md-3"></app-product-item>
+    <div class="d-flex flex-column">
+      <div class="row">
+        @for (product of products; track product.id) {
+        <app-product-item
+          [product]="product"
+          (removeProductHandler)="removeProduct($event)"
+          class="col-sm-6 col-md-3 g-4"
+        ></app-product-item>
+        }
+      </div>
+      <button class="btn btn-dark w-50 mt-5" (click)="editProduct()">
+        Edit Product 1
+      </button>
     </div>
   </div>
 </div>

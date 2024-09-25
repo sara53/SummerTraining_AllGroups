@@ -1,12 +1,21 @@
 <div class="card">
-  <img
-    src="https://images.pexels.com/photos/12255407/pexels-photo-12255407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    class="card-img-top"
-    alt="..."
-  />
+  <img [src]="product?.imgSrc" class="card-img-top" alt="..." />
   <div class="card-body">
-    <h5 class="card-title">Coffee</h5>
-    <p class="card-text">bulk of the card's content.</p>
-    <a href="#" class="btn btn-outline-primary">Buy Now</a>
+    <h5 class="card-title">
+      {{ product?.name || "Default Product Name" }}
+    </h5>
+    @if (previousBookName) {
+    <h5 class="card-title text-success">
+      Previous Book Name : {{ previousBookName }}
+    </h5>
+    }
+
+    <p class="card-text lead">Price : {{ product?.price }}</p>
+    <a
+      href="#"
+      (click)="removeProduct(product?.id)"
+      class="btn btn-outline-danger"
+      >Remove Product</a
+    >
   </div>
 </div>
