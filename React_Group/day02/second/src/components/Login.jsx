@@ -3,13 +3,28 @@ import React, { Component } from 'react'
 export class Login extends Component {
     state = {
         title: "Login Component",
-        count: 0
+        count: 0,
+        movies: []
     }
     constructor() {
         super();
         console.log( "1-ctor" )
     }
 
+    componentDidMount() {
+        // connection to api -- setMovies [data]
+        console.log( "componentDidMount" )
+    }
+
+    componentDidUpdate() {
+        console.log( this.state.count )
+        console.log( "DidUpdate" )
+    }
+
+
+    componentWillUnmount() {
+
+    }
     clickHandler = () => {
         this.setState( {
             title: "Register Component"
@@ -17,10 +32,13 @@ export class Login extends Component {
 
     }
 
+
+
     increase = () => {
         this.setState( {
             count: this.state.count + 1
         } )
+
     }
     decrease = () => {
         this.setState( {
